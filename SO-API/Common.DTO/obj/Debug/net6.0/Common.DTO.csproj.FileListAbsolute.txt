@@ -1,0 +1,12 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\bin\Debug\net6.0\Common.DTO.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\bin\Debug\net6.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\bin\Debug\net6.0\Common.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\refint\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\Common.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.DTO\obj\Debug\net6.0\ref\Common.DTO.dll

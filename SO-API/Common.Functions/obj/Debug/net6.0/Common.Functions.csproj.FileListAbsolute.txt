@@ -1,0 +1,5 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.Functions\obj\Debug\net6.0\Common.Functions.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.Functions\obj\Debug\net6.0\Common.Functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.Functions\obj\Debug\net6.0\Common.Functions.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.Functions\obj\Debug\net6.0\Common.Functions.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Common.Functions\obj\Debug\net6.0\Common.Functions.csproj.CoreCompileInputs.cache

@@ -1,0 +1,12 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\bin\Debug\net7.0\Mach.DTO.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\bin\Debug\net7.0\Mach.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\bin\Debug\net7.0\Mach.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\refint\Mach.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\Mach.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.DTO\obj\Debug\net7.0\ref\Mach.DTO.dll

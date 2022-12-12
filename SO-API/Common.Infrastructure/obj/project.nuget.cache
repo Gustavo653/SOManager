@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "iw2S1l3xywJYH5OMuADBAnDHjogyoC6HvJWt9ZMbSK+o6fGv9eAvaDxKc+0z3z7D71x0KayTqhpxj8/wmx67qA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ujipe\\OneDrive\\Documentos\\GitHub\\SOManager\\SO-API\\Common.Infrastructure\\Common.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\ujipe\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

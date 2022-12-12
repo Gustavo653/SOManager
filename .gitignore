@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Mach-API/Mach.API/appsettings.Development.json
+/Mach-API/Mach.API/appsettings.json
+/SO-API/SO.API/appsettings.json
+/SO-API/SO.API/appsettings.Development.json
