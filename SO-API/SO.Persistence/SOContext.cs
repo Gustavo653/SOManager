@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SO.DataAccess.Configuration;
+using SO.Domain;
 using SO.Domain.Identity;
 using System;
 
@@ -10,6 +12,7 @@ namespace SO.DataAccess
                                                IdentityUserClaim<Guid>, UserRole, IdentityUserLogin<Guid>,
                                                IdentityRoleClaim<Guid>, IdentityUserToken<Guid>>
     {
+        public DbSet<Ticket> Tickets { get; set; }
         public SOContext(DbContextOptions<SOContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +33,8 @@ namespace SO.DataAccess
                         .IsRequired();
                 }
             );
+
+            modelBuilder.ApplyConfiguration(new TicketConfig());
         }
     }
 }
