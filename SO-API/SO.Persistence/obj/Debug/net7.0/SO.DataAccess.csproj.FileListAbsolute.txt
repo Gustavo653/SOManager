@@ -25,3 +25,5 @@ C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\obj\De
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\obj\Debug\net7.0\SO.DataAccess.pdb
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\obj\Debug\net7.0\SO.DataAccess.genruntimeconfig.cache
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\obj\Debug\net7.0\ref\SO.DataAccess.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\bin\Debug\net7.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Persistence\bin\Debug\net7.0\Common.DTO.pdb

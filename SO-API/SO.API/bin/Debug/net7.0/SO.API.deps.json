@@ -1128,6 +1128,11 @@
           "Common.Domain.dll": {}
         }
       },
+      "Common.DTO/1.0.0": {
+        "runtime": {
+          "Common.DTO.dll": {}
+        }
+      },
       "Common.Functions/1.0.0": {
         "dependencies": {
           "Common.Domain": "1.0.0",
@@ -1175,6 +1180,7 @@
       },
       "SO.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0"
         },
         "runtime": {
@@ -1182,6 +1188,9 @@
         }
       },
       "SO.DTO/1.0.0": {
+        "dependencies": {
+          "SO.Domain": "1.0.0"
+        },
         "runtime": {
           "SO.DTO.dll": {}
         }
@@ -1189,6 +1198,7 @@
       "SO.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.0",
+          "Common.DTO": "1.0.0",
           "Common.Infrastructure": "1.0.0",
           "Microsoft.Extensions.Identity.Core": "7.0.0",
           "SO.DTO": "1.0.0",
@@ -2073,6 +2083,11 @@
       "sha512": ""
     },
     "Common.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

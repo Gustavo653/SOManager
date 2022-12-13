@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "aSiruMLA6eB885l8JpEZ2aGvljT4LM4giRoRwpCvRill/BoAto74O+jmnV+Ig7kqUeIEifD1Fyyx4KHpdK/sIQ==",
+  "dgSpecHash": "OvZR9XsUZahBl4ycDajpKwg8hWCH7SbVsx5J973caslWtNUFfP6pf/J+IIC3Yy7hzGZL4kNDoeJdF0EyezW2aQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ujipe\\OneDrive\\Documentos\\GitHub\\SOManager\\SO-API\\SO.Domain\\SO.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ujipe\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.0\\microsoft.aspnetcore.cryptography.internal.7.0.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.0\\microsoft.aspnetcore.cryptography.keyderivation.7.0.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.0.nupkg.sha512",
+    "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ujipe\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.0\\microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",

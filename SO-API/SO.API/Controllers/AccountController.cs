@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace SO.API.Controllers
 {
-    [Authorize]
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AccountController : ControllerBase
+    public class AccountController : BaseController
     {
         private readonly IAccountService _accountService;
         private readonly ITokenService _tokenService;
@@ -42,7 +39,7 @@ namespace SO.API.Controllers
 
         [HttpPost("Register")]
         [AllowAnonymous]
-        public async Task<IActionResult> Register(UserDto userDto)
+        public async Task<IActionResult> Register(UserDTO userDto)
         {
             try
             {
@@ -54,7 +51,7 @@ namespace SO.API.Controllers
                     return Ok(new
                     {
                         userName = user.UserName,
-                        PrimeroNome = user.PrimeiroNome,
+                        PrimeroNome = user.FirstName,
                         token = _tokenService.CreateToken(user).Result
                     });
 
@@ -82,7 +79,7 @@ namespace SO.API.Controllers
                 return Ok(new
                 {
                     userName = user.UserName,
-                    PrimeroNome = user.PrimeiroNome,
+                    firstName = user.FirstName,
                     token = _tokenService.CreateToken(user).Result
                 });
             }
@@ -94,7 +91,7 @@ namespace SO.API.Controllers
         }
 
         [HttpPut("UpdateUser")]
-        public async Task<IActionResult> UpdateUser(UserUpdateDto userUpdateDto)
+        public async Task<IActionResult> UpdateUser(UserDTO userUpdateDto)
         {
             try
             {
@@ -110,7 +107,7 @@ namespace SO.API.Controllers
                 return Ok(new
                 {
                     userName = userReturn.UserName,
-                    PrimeroNome = userReturn.PrimeiroNome,
+                    firstName = userReturn.FirstName,
                     token = _tokenService.CreateToken(userReturn).Result
                 });
             }

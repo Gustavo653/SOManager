@@ -19,3 +19,5 @@ C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\obj\De
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\obj\Debug\net7.0\refint\SO.Application.dll
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\obj\Debug\net7.0\SO.Application.pdb
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\obj\Debug\net7.0\ref\SO.Application.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\bin\Debug\net7.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Application\bin\Debug\net7.0\Common.DTO.pdb

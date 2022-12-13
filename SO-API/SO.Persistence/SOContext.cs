@@ -8,9 +8,9 @@ using System;
 
 namespace SO.DataAccess
 {
-    public class SOContext : IdentityDbContext<User, Role, Guid,
-                                               IdentityUserClaim<Guid>, UserRole, IdentityUserLogin<Guid>,
-                                               IdentityRoleClaim<Guid>, IdentityUserToken<Guid>>
+    public class SOContext : IdentityDbContext<User, Role, long,
+                                               IdentityUserClaim<long>, UserRole, IdentityUserLogin<long>,
+                                               IdentityRoleClaim<long>, IdentityUserToken<long>>
     {
         public DbSet<Ticket> Tickets { get; set; }
         public SOContext(DbContextOptions<SOContext> options) : base(options) { }

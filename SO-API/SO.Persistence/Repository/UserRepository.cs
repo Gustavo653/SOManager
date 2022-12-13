@@ -18,7 +18,7 @@ namespace SO.DataAccess.Repository
             return await GetListAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(Guid id)
+        public async Task<User> GetUserByIdAsync(long id)
         {
             return await GetEntities().FirstOrDefaultAsync(x => x.Id == id);
         }

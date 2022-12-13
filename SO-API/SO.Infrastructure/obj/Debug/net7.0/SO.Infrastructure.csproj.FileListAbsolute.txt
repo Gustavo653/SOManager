@@ -17,3 +17,5 @@ C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\obj
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\obj\Debug\net7.0\refint\SO.Infrastructure.dll
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\obj\Debug\net7.0\SO.Infrastructure.pdb
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\obj\Debug\net7.0\ref\SO.Infrastructure.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\bin\Debug\net7.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.Infrastructure\bin\Debug\net7.0\Common.DTO.pdb

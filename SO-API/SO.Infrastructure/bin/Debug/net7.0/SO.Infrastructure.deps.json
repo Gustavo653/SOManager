@@ -9,6 +9,7 @@
       "SO.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.0",
+          "Common.DTO": "1.0.0",
           "Common.Infrastructure": "1.0.0",
           "Microsoft.Extensions.Identity.Core": "7.0.0",
           "SO.DTO": "1.0.0",
@@ -241,6 +242,11 @@
           }
         }
       },
+      "Common.DTO/1.0.0": {
+        "runtime": {
+          "Common.DTO.dll": {}
+        }
+      },
       "Common.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
@@ -251,6 +257,7 @@
       },
       "SO.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0"
         },
         "runtime": {
@@ -258,6 +265,9 @@
         }
       },
       "SO.DTO/1.0.0": {
+        "dependencies": {
+          "SO.Domain": "1.0.0"
+        },
         "runtime": {
           "SO.DTO.dll": {}
         }
@@ -423,6 +433,11 @@
       "sha512": "sha512-Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
       "path": "system.io.pipelines/5.0.2",
       "hashPath": "system.io.pipelines.5.0.2.nupkg.sha512"
+    },
+    "Common.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Common.Infrastructure/1.0.0": {
       "type": "project",

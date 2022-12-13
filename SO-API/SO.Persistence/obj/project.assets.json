@@ -1288,6 +1288,16 @@
           "bin/placeholder/Common.Domain.dll": {}
         }
       },
+      "Common.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Common.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.DTO.dll": {}
+        }
+      },
       "Common.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1305,6 +1315,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0"
         },
         "compile": {
@@ -1317,6 +1328,9 @@
       "SO.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "SO.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/SO.DTO.dll": {}
         },
@@ -1329,6 +1343,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "AutoMapper": "12.0.0",
+          "Common.DTO": "1.0.0",
           "Common.Infrastructure": "1.0.0",
           "Microsoft.Extensions.Identity.Core": "7.0.0",
           "SO.DTO": "1.0.0",
@@ -3822,6 +3837,11 @@
       "type": "project",
       "path": "../Common.Models/Common.Domain.csproj",
       "msbuildProject": "../Common.Models/Common.Domain.csproj"
+    },
+    "Common.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Common.DTO/Common.DTO.csproj",
+      "msbuildProject": "../Common.DTO/Common.DTO.csproj"
     },
     "Common.Infrastructure/1.0.0": {
       "type": "project",

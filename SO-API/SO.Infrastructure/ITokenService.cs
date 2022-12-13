@@ -4,6 +4,6 @@ namespace SO.Infrastructure
 {
     public interface ITokenService
     {
-        Task<string> CreateToken(UserUpdateDto userUpdateDto);
+        Task<string> CreateToken(UserDTO userDTO);
     }
 }

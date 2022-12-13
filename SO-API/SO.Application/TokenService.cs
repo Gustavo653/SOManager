@@ -31,9 +31,9 @@ namespace SO.Application
             _mapper = mapper;
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
         }
-        public async Task<string> CreateToken(UserUpdateDto userUpdateDto)
+        public async Task<string> CreateToken(UserDTO userDTO)
         {
-            var user = _mapper.Map<User>(userUpdateDto);
+            var user = _mapper.Map<User>(userDTO);
 
             var claims = new List<Claim>
             {

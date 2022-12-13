@@ -26,7 +26,7 @@ namespace SO.Application
             _userRepository = userRepository;
         }
 
-        public async Task<SignInResult> CheckUserPasswordAsync(UserUpdateDto userUpdateDto, string password)
+        public async Task<SignInResult> CheckUserPasswordAsync(UserDTO userUpdateDto, string password)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace SO.Application
             }
         }
 
-        public async Task<UserUpdateDto> CreateAccountAsync(UserDto userDto)
+        public async Task<UserDTO> CreateAccountAsync(UserDTO userDto)
         {
             try
             {
@@ -50,7 +50,7 @@ namespace SO.Application
 
                 if (result.Succeeded)
                 {
-                    var userToReturn = _mapper.Map<UserUpdateDto>(user);
+                    var userToReturn = _mapper.Map<UserDTO>(user);
                     return userToReturn;
                 }
 
@@ -62,14 +62,14 @@ namespace SO.Application
             }
         }
 
-        public async Task<UserUpdateDto> GetUserByUserNameAsync(string userName)
+        public async Task<UserDTO> GetUserByUserNameAsync(string userName)
         {
             try
             {
                 var user = await _userRepository.GetUserByUserNameAsync(userName);
                 if (user == null) return null;
 
-                var userUpdateDto = _mapper.Map<UserUpdateDto>(user);
+                var userUpdateDto = _mapper.Map<UserDTO>(user);
                 return userUpdateDto;
             }
             catch (Exception ex)
@@ -78,21 +78,21 @@ namespace SO.Application
             }
         }
 
-        public async Task<UserUpdateDto> UpdateAccount(UserUpdateDto userUpdateDto)
+        public async Task<UserDTO> UpdateAccount(UserDTO userDTO)
         {
             try
             {
-                var user = await _userRepository.GetUserByUserNameAsync(userUpdateDto.UserName);
+                var user = await _userRepository.GetUserByUserNameAsync(userDTO.UserName);
                 if (user == null) return null;
 
-                userUpdateDto.Id = user.Id;
+                userDTO.Id = user.Id;
 
-                _mapper.Map(userUpdateDto, user);
+                _mapper.Map(userDTO, user);
 
-                if (userUpdateDto.Password != null)
+                if (userDTO.Password != null)
                 {
                     var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                    await _userManager.ResetPasswordAsync(user, token, userUpdateDto.Password);
+                    await _userManager.ResetPasswordAsync(user, token, userDTO.Password);
                 }
 
                 _userRepository.Update(user);
@@ -101,7 +101,7 @@ namespace SO.Application
                 {
                     var userRetorno = await _userRepository.GetUserByUserNameAsync(user.UserName);
 
-                    return _mapper.Map<UserUpdateDto>(userRetorno);
+                    return _mapper.Map<UserDTO>(userRetorno);
                 }
 
                 return null;

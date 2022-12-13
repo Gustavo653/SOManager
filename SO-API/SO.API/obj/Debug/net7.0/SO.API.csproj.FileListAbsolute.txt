@@ -122,3 +122,5 @@ C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\obj\Debug\net7
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\obj\Debug\net7.0\SO.API.genruntimeconfig.cache
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\obj\Debug\net7.0\ref\SO.API.dll
 C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\obj\Debug\net7.0\SO.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\bin\Debug\net7.0\Common.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.API\bin\Debug\net7.0\Common.DTO.pdb

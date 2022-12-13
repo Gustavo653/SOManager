@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SO.Domain.Identity
 {
-    public class User : IdentityUser<Guid>
+    public class User : IdentityUser<long>
     {
         public string Name { get; set; }
         public string Description { get; set; }

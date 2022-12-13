@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common.DTO\Common.DTO.csproj" />
     <ProjectReference Include="..\Common.Infrastructure\Common.Infrastructure.csproj" />
     <ProjectReference Include="..\SO.Domain\SO.Domain.csproj" />
     <ProjectReference Include="..\SO.DTO\SO.DTO.csproj" />

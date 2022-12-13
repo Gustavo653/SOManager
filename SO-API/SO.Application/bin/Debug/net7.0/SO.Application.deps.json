@@ -619,6 +619,11 @@
       },
       "System.Text.Encodings.Web/4.5.0": {},
       "System.Text.Json/4.7.2": {},
+      "Common.DTO/1.0.0": {
+        "runtime": {
+          "Common.DTO.dll": {}
+        }
+      },
       "Common.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
@@ -629,6 +634,7 @@
       },
       "SO.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0"
         },
         "runtime": {
@@ -636,6 +642,9 @@
         }
       },
       "SO.DTO/1.0.0": {
+        "dependencies": {
+          "SO.Domain": "1.0.0"
+        },
         "runtime": {
           "SO.DTO.dll": {}
         }
@@ -643,6 +652,7 @@
       "SO.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.0",
+          "Common.DTO": "1.0.0",
           "Common.Infrastructure": "1.0.0",
           "Microsoft.Extensions.Identity.Core": "7.0.0",
           "SO.DTO": "1.0.0",
@@ -1079,6 +1089,11 @@
       "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+    },
+    "Common.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Common.Infrastructure/1.0.0": {
       "type": "project",

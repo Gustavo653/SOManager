@@ -83,6 +83,7 @@ namespace SO.API
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITicketRepository, TicketRepository>();
 
             services.AddCors();
             services.AddSwaggerGen(options =>

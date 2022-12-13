@@ -6,7 +6,7 @@ namespace SO.Infrastructure
     public interface IUserRepository : IRepositoryBase<User>
     {
         Task<IEnumerable<User>> GetUsersAsync();
-        Task<User> GetUserByIdAsync(Guid id);
+        Task<User> GetUserByIdAsync(long id);
         Task<User> GetUserByUserNameAsync(string userName);
     }
 }
