@@ -12,8 +12,8 @@ using SO.DataAccess;
 namespace SO.API.Migrations
 {
     [DbContext(typeof(SOContext))]
-    [Migration("20221213004112_ChangePKTicket")]
-    partial class ChangePKTicket
+    [Migration("20221213005459_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -48,6 +48,7 @@ namespace SO.Application
                     entity.CreatedBy = user;
                     await _ticketRepository.InsertAsync(entity);
                     await _ticketRepository.SaveChangesAsync();
+                    responseDTO.Object = ticketDTO;
                 }
             }
             catch (Exception ex)
@@ -56,24 +57,104 @@ namespace SO.Application
             }
             return responseDTO;
         }
-        public Task<ResponseDTO> UpdateTicket(TicketDTO ticketDTO)
+        public async Task<ResponseDTO> UpdateTicket(long id, UserDTO userDTO, TicketDTO ticketDTO)
         {
-            throw new NotImplementedException();
+            ResponseDTO responseDTO = new();
+            try
+            {
+                var ticket = await _ticketRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.Id == id);
+                if (ticket == null)
+                {
+                    responseDTO.Code = 400;
+                    responseDTO.Message = "Este ticket não existe!";
+                }
+                else
+                {
+                    var user = await _userRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.UserName == userDTO.UserName);
+                    var entity = _mapper.Map<Ticket>(ticketDTO);
+                    entity.ChangedDate = DateTime.Now;
+                    entity.ChangedBy = user;
+                    _ticketRepository.Update(entity);
+                    await _ticketRepository.SaveChangesAsync();
+                    responseDTO.Object = ticketDTO;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseDTO.SetError(ex);
+            }
+            return responseDTO;
         }
 
-        public Task<ResponseDTO> DeleteTicket(long id)
+        public async Task<ResponseDTO> DeleteTicket(long id)
         {
-            throw new NotImplementedException();
+            ResponseDTO responseDTO = new();
+            try
+            {
+                var ticket = await _ticketRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.Id == id);
+                if (ticket == null)
+                {
+                    responseDTO.Code = 400;
+                    responseDTO.Message = "Este ticket não existe!";
+                }
+                else
+                {
+                    _ticketRepository.Delete(ticket);
+                    await _ticketRepository.SaveChangesAsync();
+                    responseDTO.Object = ticket;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseDTO.SetError(ex);
+            }
+            return responseDTO;
         }
 
-        public Task<ResponseDTO> GetAll()
+        public async Task<ResponseDTO> GetAll()
         {
-            throw new NotImplementedException();
+            ResponseDTO responseDTO = new();
+            try
+            {
+                var ticket = await _ticketRepository.GetTrackedEntities().ToListAsync();
+                if (!ticket.Any())
+                {
+                    responseDTO.Code = 200;
+                    responseDTO.Message = "Não existem tickets cadastrados!";
+                }
+                else
+                {
+                    responseDTO.Object = ticket;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseDTO.SetError(ex);
+            }
+            return responseDTO;
         }
 
-        public Task<ResponseDTO> GetTicket(long id)
+        public async Task<ResponseDTO> GetTicket(long id)
         {
-            throw new NotImplementedException();
+            ResponseDTO responseDTO = new();
+            try
+            {
+                var ticket = await _ticketRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.Id == id || x.Protocol == id.ToString());
+                if (ticket == null)
+                {
+                    responseDTO.Code = 200;
+                    responseDTO.Message = "O ticket não foi encontrado!";
+                }
+                else
+                {
+                    responseDTO.Object = ticket;
+                }
+            }
+            catch (Exception ex)
+            {
+                responseDTO.SetError(ex);
+            }
+            return responseDTO;
         }
 
     }

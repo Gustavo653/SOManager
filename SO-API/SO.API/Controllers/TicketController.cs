@@ -18,10 +18,35 @@ namespace SO.API.Controllers
             _accountService = accountService;
         }
         [HttpPost("create")]
-        public async Task<IActionResult> CreateTicket(TicketDTO ticketDTO)
+        public async Task<IActionResult> CreateTicket([FromBody] TicketDTO ticketDTO)
         {
             var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName());
-            var data = await _ticketService.CreateTicket(userDTO,ticketDTO);
+            var data = await _ticketService.CreateTicket(userDTO, ticketDTO);
+            return StatusCode(data.Code, data);
+        }
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> UpdateTicket([FromRoute] long id, [FromBody] TicketDTO ticketDTO)
+        {
+            var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName());
+            var data = await _ticketService.UpdateTicket(id, userDTO, ticketDTO);
+            return StatusCode(data.Code, data);
+        }
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> DeleteTicket([FromRoute] long id)
+        {
+            var data = await _ticketService.DeleteTicket(id);
+            return StatusCode(data.Code, data);
+        }
+        [HttpGet("read/{id}")]
+        public async Task<IActionResult> GetTicket([FromRoute] long id)
+        {
+            var data = await _ticketService.GetTicket(id);
+            return StatusCode(data.Code, data);
+        }
+        [HttpGet("read")]
+        public async Task<IActionResult> GetALl()
+        {
+            var data = await _ticketService.GetAll();
             return StatusCode(data.Code, data);
         }
     }
