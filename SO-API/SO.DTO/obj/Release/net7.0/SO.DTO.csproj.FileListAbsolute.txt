@@ -1,0 +1,15 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\bin\Release\net7.0\SO.DTO.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\bin\Release\net7.0\SO.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\bin\Release\net7.0\SO.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\bin\Release\net7.0\SO.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\bin\Release\net7.0\SO.Domain.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.csproj.CopyComplete
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\refint\SO.DTO.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\SO.DTO.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\SO.DTO\obj\Release\net7.0\ref\SO.DTO.dll

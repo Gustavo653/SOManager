@@ -20,7 +20,7 @@ namespace SO.API.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> CreateTicket([FromBody] TicketDTO ticketDTO)
         {
-            var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName());
+            var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName() ?? "string");
             var data = await _ticketService.CreateTicket(userDTO, ticketDTO);
             return StatusCode(data.Code, data);
         }

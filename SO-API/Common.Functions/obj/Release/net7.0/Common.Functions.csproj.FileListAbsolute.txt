@@ -1,0 +1,17 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Functions.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Functions.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Functions.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Infrastructure.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Infrastructure.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\bin\Release\net7.0\Common.Domain.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.csproj.CopyComplete
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\refint\Common.Functions.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\Common.Functions.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Functions\obj\Release\net7.0\ref\Common.Functions.dll

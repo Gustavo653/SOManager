@@ -1,0 +1,12 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\bin\Release\net7.0\Common.Infrastructure.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\bin\Release\net7.0\Common.Infrastructure.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\bin\Release\net7.0\Common.Infrastructure.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\refint\Common.Infrastructure.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\Common.Infrastructure.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Infrastructure\obj\Release\net7.0\ref\Common.Infrastructure.dll

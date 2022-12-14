@@ -1,0 +1,12 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\bin\Release\net7.0\Common.Domain.deps.json
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\bin\Release\net7.0\Common.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\bin\Release\net7.0\Common.Domain.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\refint\Common.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\Common.Domain.pdb
+C:\Users\ujipe\OneDrive\Documentos\GitHub\SOManager\SO-API\Common.Models\obj\Release\net7.0\ref\Common.Domain.dll

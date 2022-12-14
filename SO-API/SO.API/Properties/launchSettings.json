@@ -1,4 +1,26 @@
-﻿{
+{
+  "profiles": {
+    "SO.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:7001;http://localhost:5001",
+      "dotnetRunMessages": true
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7001/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:7001;http://localhost:5001"
+      },
+      "distributionName": ""
+    }
+  },
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
@@ -6,18 +28,6 @@
     "iisExpress": {
       "applicationUrl": "http://localhost:57295",
       "sslPort": 44327
-    }
-  },
-  "profiles": {
-    "SO.API": {
-      "applicationUrl": "https://localhost:7001;http://localhost:5001",
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "launchBrowser": true,
-      "launchUrl": "swagger"
     }
   }
 }
