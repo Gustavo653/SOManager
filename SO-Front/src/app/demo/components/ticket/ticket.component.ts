@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService, ConfirmationService } from 'primeng/api';
+import { ticket } from '../../api/ticket';
+import { TicketService } from '../../service/ticket.service';
 
 @Component({
     templateUrl: './ticket.component.html',
@@ -21,7 +23,17 @@ import { MessageService, ConfirmationService } from 'primeng/api';
     ],
 })
 export class TicketComponent implements OnInit {
-    constructor() {}
+    tickets: ticket[] = [];
+    constructor(private ticketService: TicketService) {}
 
-    ngOnInit() {    }
+    ngOnInit() {
+        this.ticketService.getAllTickets().subscribe(
+            (x) => {
+                this.tickets = x.object;
+            },
+            (error) => {
+                alert('Deu ruim!');
+            }
+        );
+    }
 }
