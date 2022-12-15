@@ -116,7 +116,22 @@ namespace SO.Application
             ResponseDTO responseDTO = new();
             try
             {
-                var ticket = await _ticketRepository.GetTrackedEntities().ToListAsync();
+                var ticket = await _ticketRepository.GetTrackedEntities()
+                                                    .Select(x => new
+                {
+                    x.Id,
+                    x.Protocol,
+                    x.Subject,
+                    x.CreatedDate,
+                    createdBy = x.CreatedBy.Name,
+                    x.ChangedDate,
+                    changedBy = x.ChangedBy.Name,
+                    priorityId = x.Priority,
+                    complexityId = x.Complexity,
+                    priority = x.Priority.ToString(),
+                    complexity = x.Complexity.ToString(),
+                }).ToListAsync();
+
                 if (!ticket.Any())
                 {
                     responseDTO.Code = 200;
@@ -139,7 +154,21 @@ namespace SO.Application
             ResponseDTO responseDTO = new();
             try
             {
-                var ticket = await _ticketRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.Id == id || x.Protocol == id.ToString());
+                var ticket = await _ticketRepository.GetTrackedEntities()
+                                                    .Select(x=> new
+                {
+                    x.Id,
+                    x.Protocol,
+                    x.Subject,
+                    x.CreatedDate,
+                    createdBy = x.CreatedBy.Name,
+                    x.ChangedDate,
+                    changedBy = x.ChangedBy.Name,
+                    priorityId = x.Priority,
+                    complexityId = x.Complexity,
+                    priority = x.Priority.ToString(),
+                    complexity = x.Complexity.ToString(),
+                }).FirstOrDefaultAsync(x => x.Id == id || x.Protocol == id.ToString());
                 if (ticket == null)
                 {
                     responseDTO.Code = 200;

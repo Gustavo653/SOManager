@@ -127,7 +127,7 @@ namespace SO.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mach.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SO.API v1"));
             }
 
             app.UseHangfireDashboard("/hangfire", new DashboardOptions
@@ -135,7 +135,7 @@ namespace SO.API
                 Authorization = new[] { new HangfireAuthorizationFilter() },
             });
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
