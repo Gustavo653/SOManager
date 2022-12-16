@@ -30,6 +30,7 @@ export class TicketComponent implements OnInit {
     tickets: ticket[] = [];
     baseTicket!: base<ticket[]>;
     selectedTickets: ticket[] = [];
+    ticket: ticket = {};
 
     cols: any[] = [];
     _selectedColumns: any[] = [];
@@ -37,6 +38,11 @@ export class TicketComponent implements OnInit {
     _ = get;
 
     loading: boolean = true;
+    ticketDialog: boolean = false;
+    submitted: boolean = false;
+
+    complexity: any;
+    priority: any;
 
     @ViewChild('filter') filter!: ElementRef;
 
@@ -51,7 +57,7 @@ export class TicketComponent implements OnInit {
         this.cols = [
             {
                 field: 'protocol',
-                header: 'Chamado',
+                header: 'Protocolo',
                 type: 'text',
             },
             {
@@ -98,6 +104,8 @@ export class TicketComponent implements OnInit {
         this.fetchData();
     }
     fetchData() {
+        this.priority = ['Baixa', 'Média', 'Alta'];
+        this.complexity = ['Baixa', 'Média', 'Alta'];
         this.loading = true;
         this.ticketService.getAllTickets().subscribe(
             (x) => {
@@ -124,12 +132,112 @@ export class TicketComponent implements OnInit {
         this.loading = false;
     }
     deleteSelectedTickets() {}
-    openNew() {}
-
-    editTicket(ticket: ticket) {
-        console.log(ticket);
+    openNew() {
+        this.ticket = {};
+        this.submitted = false;
+        this.ticketDialog = true;
     }
-    deleteTicket(ticket: ticket) {}
+    hideDialog() {
+        this.ticketDialog = false;
+        this.submitted = false;
+    }
+    saveTicket() {
+        console.log(this.ticket);
+        this.submitted = true;
+        if (
+            this.ticket.protocol &&
+            this.ticket.complexity &&
+            this.ticket.priority &&
+            this.ticket.subject
+        ) {
+            if (!this.ticket.id) {
+                this.ticketService.createTicket(this.ticket).subscribe(
+                    (x) => {
+                        this.messageService.add({
+                            severity: 'success',
+                            summary: `Ticket criado!`,
+                            detail: `Seu ticket foi criado em: ${x.elapsed.elapsedMilliseconds}ms`,
+                            life: 3000,
+                        });
+                        this.ticketDialog = false;
+                        this.fetchData();
+                    },
+                    (error) => {
+                        this.messageService.add({
+                            severity: 'error',
+                            summary: `Erro ${error.code ?? error.status}`,
+                            detail: `Não foi possível salvar seu ticket! \n Erro: ${
+                                error.title ?? error.message
+                            }`,
+                            life: 3000,
+                        });
+                    }
+                );
+            } else {
+                this.ticketService
+                    .updateTicket(this.ticket.id, this.ticket)
+                    .subscribe(
+                        (x) => {
+                            this.messageService.add({
+                                severity: 'success',
+                                summary: `Ticket atualizado!`,
+                                detail: `Seu ticket foi atualizado em: ${x.elapsed.elapsedMilliseconds}ms`,
+                                life: 3000,
+                            });
+                            this.ticketDialog = false;
+                            this.fetchData();
+                        },
+                        (error) => {
+                            this.messageService.add({
+                                severity: 'error',
+                                summary: `Erro ${error.code ?? error.status}`,
+                                detail: `Não foi possível atualizar seu ticket! \n Erro: ${
+                                    error.title ?? error.message
+                                }`,
+                                life: 3000,
+                            });
+                        }
+                    );
+            }
+        }
+    }
+
+    editTicket(ticketSelected: ticket) {
+        this.ticket = { ...ticketSelected };
+        this.ticketDialog = true;
+    }
+
+    deleteTicket(ticketSelected: ticket) {
+        this.confirmationService.confirm({
+            message: `Você tem certeza que deseja excluir o ticket ${ticketSelected.protocol}?`,
+            header: 'Confirmar operação',
+            acceptLabel: 'Sim',
+            rejectLabel: 'Não',
+            accept: () => {
+                this.ticketService.deleteTicket(ticketSelected.id!).subscribe(
+                    (x) => {
+                        this.messageService.add({
+                            severity: 'success',
+                            summary: `Ticket excluído!`,
+                            detail: `Seu ticket foi excluído em: ${x.elapsed.elapsedMilliseconds}ms`,
+                            life: 3000,
+                        });
+                        this.fetchData();
+                    },
+                    (error) => {
+                        this.messageService.add({
+                            severity: 'error',
+                            summary: `Erro ${error.code ?? error.status}`,
+                            detail: `Não foi possível excluir seu ticket! \n Erro: ${
+                                error.title ?? error.message
+                            }`,
+                            life: 3000,
+                        });
+                    }
+                );
+            },
+        });
+    }
 
     onGlobalFilter(table: Table, event: Event) {
         table.filterGlobal(

@@ -27,7 +27,7 @@ namespace SO.API.Controllers
         [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateTicket([FromRoute] long id, [FromBody] TicketDTO ticketDTO)
         {
-            var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName());
+            var userDTO = await _accountService.GetUserByUserNameAsync(User.GetUserName() ?? "string");
             var data = await _ticketService.UpdateTicket(id, userDTO, ticketDTO);
             return StatusCode(data.Code, data);
         }

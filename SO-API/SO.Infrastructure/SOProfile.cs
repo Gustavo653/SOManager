@@ -9,9 +9,9 @@ namespace SO.Infrastructure
     {
         public SOProfile()
         {
-            CreateMap<User, UserDTO>().ReverseMap();
-            CreateMap<User, UserLoginDto>().ReverseMap();
-            CreateMap<Ticket, TicketDTO>().ReverseMap();
+            CreateMap<User, UserDTO>(MemberList.None).ReverseMap();
+            CreateMap<User, UserLoginDto>(MemberList.None).ReverseMap();
+            CreateMap<Ticket, TicketDTO>(MemberList.None).ReverseMap();
         }
     }
 }

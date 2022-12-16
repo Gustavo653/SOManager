@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SO.DataAccess;
 
@@ -11,9 +12,11 @@ using SO.DataAccess;
 namespace SO.API.Migrations
 {
     [DbContext(typeof(SOContext))]
-    partial class SOContextModelSnapshot : ModelSnapshot
+    [Migration("20221216012241_AddNullColumnOnDate")]
+    partial class AddNullColumnOnDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

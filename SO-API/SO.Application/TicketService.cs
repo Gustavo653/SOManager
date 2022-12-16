@@ -62,7 +62,7 @@ namespace SO.Application
             ResponseDTO responseDTO = new();
             try
             {
-                var ticket = await _ticketRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.Id == id);
+                var ticket = await _ticketRepository.GetEntities().FirstOrDefaultAsync(x => x.Id == id);
                 if (ticket == null)
                 {
                     responseDTO.Code = 400;
@@ -71,10 +71,10 @@ namespace SO.Application
                 else
                 {
                     var user = await _userRepository.GetTrackedEntities().FirstOrDefaultAsync(x => x.UserName == userDTO.UserName);
-                    var entity = _mapper.Map<Ticket>(ticketDTO);
-                    entity.ChangedDate = DateTime.Now;
-                    entity.ChangedBy = user;
-                    _ticketRepository.Update(entity);
+                    _mapper.Map(ticketDTO, ticket);
+                    ticket.ChangedDate = DateTime.Now;
+                    ticket.ChangedBy = user;
+                    _ticketRepository.Update(ticket);
                     await _ticketRepository.SaveChangesAsync();
                     responseDTO.Object = ticketDTO;
                 }

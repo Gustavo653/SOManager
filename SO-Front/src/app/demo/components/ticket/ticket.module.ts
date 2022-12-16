@@ -16,6 +16,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { TicketComponent } from './ticket.component';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ToolbarModule } from 'primeng/toolbar';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
     declarations: [TicketComponent],
@@ -35,7 +36,8 @@ import { ToolbarModule } from 'primeng/toolbar';
         ProgressBarModule,
         ToastModule,
         ToolbarModule,
-        ConfirmDialogModule
+        ConfirmDialogModule,
+        DialogModule
     ],
 })
 export class TicketModule {}

@@ -8,8 +8,8 @@ namespace SO.Domain
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ChangedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? ChangedDate { get; set; }
         public User CreatedBy { get; set; }
         public User ChangedBy { get; set; }
     }

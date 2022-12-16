@@ -1,6 +1,95 @@
 <p-toast></p-toast>
 <p-confirmDialog></p-confirmDialog>
 
+<p-dialog
+    [(visible)]="ticketDialog"
+    header="Detalhes do ticket"
+    [transitionOptions]="'100ms'"
+    [modal]="true"
+    styleClass="p-fluid"
+>
+    <ng-template pTemplate="content">
+        <div class="field">
+            <label for="protocol">Protocolo</label>
+            <input
+                type="text"
+                pInputText
+                id="protocol"
+                [(ngModel)]="ticket.protocol"
+                required
+                autofocus
+            />
+            <small class="p-error" *ngIf="submitted && !ticket.protocol"
+                >Protocolo é obrigatório.</small
+            >
+        </div>
+        <div class="field">
+            <label for="subject">Assunto</label>
+            <input
+                type="text"
+                pInputText
+                id="subject"
+                [(ngModel)]="ticket.subject"
+                required
+                autofocus
+            />
+            <small class="p-error" *ngIf="submitted && !ticket.subject"
+                >Assunto é obrigatório.</small
+            >
+        </div>
+
+        <div class="field">
+            <label for="complexity">Complexidade</label>
+            <p-dropdown
+                [(ngModel)]="ticket.complexity"
+                inputId="complexity"
+                [options]="complexity"
+                placeholder="Selecione"
+                appendTo="body"
+                [required]="true"
+            >
+            </p-dropdown>
+            <small class="p-error" *ngIf="submitted && !ticket.complexity"
+                >Complexidade é obrigatória.</small
+            >
+        </div>
+        <div class="field">
+            <label for="priority">Prioridade</label>
+            <p-dropdown
+                [(ngModel)]="ticket.priority"
+                inputId="priority"
+                [options]="priority"
+                placeholder="Selecione"
+                appendTo="body"
+                [required]="true"
+            >
+            </p-dropdown>
+            <small class="p-error" *ngIf="submitted && !ticket.priority"
+                >Prioridade é obrigatória.</small
+            >
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button
+            pButton
+            pRipple
+            label="Cancelar"
+            icon="pi pi-times"
+            class="p-button-text"
+            (click)="hideDialog()"
+        ></button>
+        <button
+            pButton
+            pRipple
+            label="Salvar"
+            icon="pi pi-check"
+            class="p-button-text"
+            (click)="saveTicket()"
+        ></button>
+    </ng-template>
+</p-dialog>
+
 <div class="grid">
     <div class="col-12">
         <div class="card">
@@ -52,7 +141,7 @@
                     'changedDate',
                     'createdDate',
                     'priority',
-                    'complexity',
+                    'complexity'
                 ]"
             >
                 <ng-template pTemplate="caption">
@@ -131,8 +220,20 @@
                             }}
                         </td>
                         <td>
-                            <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editTicket(rowData)"></button>
-                            <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteTicket(rowData)"></button>
+                            <button
+                                pButton
+                                pRipple
+                                icon="pi pi-pencil"
+                                class="p-button-rounded p-button-success mr-2"
+                                (click)="editTicket(rowData)"
+                            ></button>
+                            <button
+                                pButton
+                                pRipple
+                                icon="pi pi-trash"
+                                class="p-button-rounded p-button-warning"
+                                (click)="deleteTicket(rowData)"
+                            ></button>
                         </td>
                     </tr>
                 </ng-template>
